@@ -1,0 +1,13 @@
+header {
+  background-image: url(../../resources/background.jpg);
+  flex-direction: row;
+  box-sizing: border-box;
+  width: 50%;
+  height: 50%;
+  display: flex;
+  color: white;
+  text-decoration: underline;
+}
+a {
+  color: white;
+}
