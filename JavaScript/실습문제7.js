@@ -22,22 +22,24 @@ function clickHandler() {
     result.innerHTML = "Congratulation!! Press restart to play again~!!";
     cilck.setAttribute("disabled", "disabled");
   }
-  alert("click");
 }
 
-function removeHandler() {
+function restartHandler() {
   // 이미지 처음에 셋팅했던 이미지로 변경
   for (let i = 0; i < images.length; i++) {
-    images[i].setAttribute("");
+    images[i].setAttribute("src", `../resources/family${i + 1}.jpg`);
   }
+
   // 숫자는 다시 0으로 셋팅하고 span 태그 값 비우기
   count = 0;
   span.innerHTML = "";
+
   // 아래 텍스트도 비우기
   result.innerHTML = "";
-  // 버튼에 disabled 삭제 -> 속성 삭제는 removeAttribute ("disabled")
-  cilck.setAttribute("disabled");
+
+  // 버튼의 disabled 삭제 -> 속성 삭제는 removeAttribute("disabled")
+  click.removeAttribute("disabled");
 }
 
 click.addEventListener("click", clickHandler);
-restart.addEventListener("click", removeHandler);
+restart.addEventListener("click", restartHandler);
