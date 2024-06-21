@@ -14,6 +14,8 @@ const userNameSpan = document.querySelector("#userNameSpan");
 const email = document.querySelector("#email");
 const emailSpan = document.querySelector("#emailSpan");
 
+/* user = 유저명  */
+
 userId.addEventListener("input", function (e) {
   // 첫글자는 반드시 영문자로, 그리고 영문자, 숫자 포함하여 총 4~12자로 입력하시오.
   const regExp = /^[a-zA-Z][a-zA-Z0-9]{3,11}$/;
